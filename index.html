@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amalo Credit - Business Booster Loans</title>
+  <meta name="description" content="Amalo Credit provides fast, flexible business booster loans for micro enterprises in Uganda.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo">
+        <p>Amalo Credit</p>
+        <p class="tagline">Your Growth is Our Aim</p>
+      </div>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="stories.html" class="nav__link">Stories</a></li>
+          <li><a href="impact.html" class="nav__link">Our Impact</a></li>
+          <li><a href="stories.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero__title">Business booster loans for micro-enterprises</h1>
+      <p class="hero__subtitle">At Amalo Credit, we fund small businesses with fast, flexible capital so you can grow with confidence.</p>
+      <p class="hero__subtitle2">We believe micro-businesses are the backbone of our economy. We provide quick and transparent loans that help entrepreneurs restock, grow, and unlock new opportunities. Our repayment model is simple: return the principal plus a fair share of the profits you earn using our funds.</p>
+      <a href="stories.html#apply" class="btn btn--primary">Apply for a Loan</a>
+      <a href="stories.html#calculator" class="btn btn--secondary">See How It Works</a>
+    </div>
+  </section>
+
+  <!-- Badges -->
+  <section class="badges">
+    <div class="container badges__grid">
+      <div class="badge">SME-focused</div>
+      <div class="badge">Fast approval</div>
+      <div class="badge">Flexible repayments</div>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section class="steps section">
+    <div class="container">
+      <h2 class="section__title">How It Works</h2>
+      <div class="grid steps__grid">
+        <div class="step"><h3>1. Apply</h3><p>Submit your application with documents.</p></div>
+        <div class="step"><h3>2. Review</h3><p>We verify and review quickly.</p></div>
+        <div class="step"><h3>3. Disbursement</h3><p>Funds in 24–72 hours.</p></div>
+        <div class="step"><h3>4. Repayment</h3><p>Repay principal + profit-share.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Amalo -->
+  <section class="why section">
+    <div class="container">
+      <h2 class="section__title">Why Choose Amalo Credit</h2>
+      <div class="grid steps__grid">
+        <div class="card">Transparent pricing</div>
+        <div class="card">Quick turnaround</div>
+        <div class="card">Tailored to micro-businesses</div>
+        <div class="card">Dedicated support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section">
+    <div class="container">
+      <h2 class="section__title">What Our Clients Say</h2>
+      <div class="grid testimonials__grid">
+        <div class="testimonial">“Amalo helped me restock quickly and grow sales.” — Sarah, Retail</div>
+        <div class="testimonial">“Fast and fair funding for my boda business.” — James, Transport</div>
+        <div class="testimonial">“Their support gave my shop stability.” — Amina, Food Vendor</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h4>Amalo Credit</h4>
+        <p>Fast, flexible booster loans for micro-enterprises.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="impact.html">Our Impact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Kampala, Uganda<br><a href="tel:+256394511511"> +256 394 511 511</a><br><a href="mailto:info@amalocredit.com">info@amalocredit.com</a></p>
+      </div>
+    </div>
+    <p class="footer__copy">© 2025 Amalo Credit. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to Top">↑</button>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+    navToggle.addEventListener('click', () => {
+      navList.classList.toggle('nav--open');
+    });
+
+    // Back to Top
+    const backToTopBtn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
